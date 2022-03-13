@@ -1,4 +1,4 @@
-package com.example.zero_waste_mobile_app;
+package com.example.zero_waste_mobile_app.ui.goodbye;
 
 import androidx.lifecycle.ViewModelProviders;
 
@@ -11,6 +11,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.zero_waste_mobile_app.R;
 
 public class fragment_goodbye extends Fragment {
 
@@ -32,5 +34,6 @@ public class fragment_goodbye extends Fragment {
         mViewModel = ViewModelProviders.of(this).get(FragmentGoodbyeViewModel.class);
         // TODO: Use the ViewModel
     }
+
 
 }

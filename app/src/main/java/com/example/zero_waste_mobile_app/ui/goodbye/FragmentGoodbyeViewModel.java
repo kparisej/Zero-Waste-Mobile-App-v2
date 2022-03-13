@@ -1,4 +1,4 @@
-package com.example.zero_waste_mobile_app;
+package com.example.zero_waste_mobile_app.ui.goodbye;
 
 import androidx.lifecycle.ViewModel;
 
