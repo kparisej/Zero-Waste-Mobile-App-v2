@@ -95,7 +95,7 @@
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:onClick="callGoodbyePage"
+        android:onClick="callWelcomePage"
         app:layout_constraintBottom_toBottomOf="@+id/goodbye_page_b1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
