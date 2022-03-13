@@ -1,6 +1,8 @@
 package com.example.zero_waste_mobile_app;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Display;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,10 +16,12 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 public class MainActivity extends AppCompatActivity {
+    //private Object WelcomePageActivity;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.welcome_page_fragment);
+        setContentView(R.layout.activity_main);
         BottomNavigationView navView = findViewById(R.id.nav_view);
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
@@ -29,7 +33,10 @@ public class MainActivity extends AppCompatActivity {
         //NavigationUI.setupWithNavController(navView, navController);
 
     }
-
+    public void callGoodbyePage(View view){
+        Intent intent = new Intent(this, GoodbyeActivity.class);
+        startActivity(intent);
+    }
     public void sendHi(View v) {
         // Do something in response to button click
         Button button = (Button) v;

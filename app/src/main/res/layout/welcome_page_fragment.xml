@@ -100,12 +100,15 @@
         android:text="click to continue"
         android:textSize="26sp"
         android:textStyle="bold"
+        android:onClick="callMainPage"
+
         app:layout_constraintBottom_toTopOf="@+id/raffle_b"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.847" />
+        app:layout_constraintVertical_bias="0.847"
+        tools:ignore="OnClick" />
 
     <TextView
         android:id="@+id/or_t"

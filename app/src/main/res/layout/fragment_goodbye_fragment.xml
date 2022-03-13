@@ -24,31 +24,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/goodbye_page_b1"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="500dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="150dp"
-        android:backgroundTint="#9BD855"
-        android:text="Return to Home Page"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="300dp"
         android:text="Thank You!"
         android:textColor="#000000"
@@ -56,20 +36,22 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/goodbye_page_b1"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.53" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="206dp"
         android:layout_height="171dp"
-        android:layout_marginTop="90dp"
-        android:src="@drawable/istockphoto_1159447883_612x612"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/sustainability_icon"
         app:layout_constraintBottom_toTopOf="@+id/goodbye_page_b1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.369"
         app:srcCompat="@drawable/sustainability_icon" />
 
     <TextView
@@ -82,6 +64,44 @@
         app:layout_constraintBottom_toTopOf="@+id/goodbye_page_b1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.176" />
+
+    <Button
+        android:id="@+id/goodbye_page_b1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="160dp"
+        android:backgroundTint="#040403"
+        android:text="Return to Home Page"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/goodbye_button"
+        android:layout_width="255dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#AEE371"
+        android:text="Return to Home Page"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:onClick="callGoodbyePage"
+        app:layout_constraintBottom_toBottomOf="@+id/goodbye_page_b1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.038"
+        tools:ignore="OnClick" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
